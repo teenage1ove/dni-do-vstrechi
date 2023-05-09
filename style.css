@@ -1,0 +1,18 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #a88a8a;
+    background-image: url(svg/layer_2.png);
+    border: 0;
+}
+
+.container {
+    margin: 0 auto;
+    margin-top: 10%;
+}
+
+
+
