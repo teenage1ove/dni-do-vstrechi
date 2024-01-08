@@ -35,5 +35,20 @@
 
 
 <script src="script.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+  // Заменяем функцию alert
+  window.alert = function(message) {
+    var alertBox = $("<div></div>").text(message).addClass("alert").addClass("alert-success");
+    $("body").append(alertBox);
+  };
+
+  // Пример использования
+  alert('Зайка, не грусти пожалуйста. Мы еще увидимся, а щас я делаю отсчет до нашей следующей встречи<3');
+});
+</script>
+
 </body>
 </html>
