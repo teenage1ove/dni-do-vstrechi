@@ -16,8 +16,10 @@ const PARAMETR = {
     month: 'Aprel',
     number: '01',
 }
+const {month, number} = PARAMETR
+console.log(month)
 // дата след. встречи
-const nextVstr = new Date(`${PARAMETR.month} ${PARAMETR.number} ${currentYear} 00:00:00`)
+const nextVstr = new Date(`${month} ${number} ${currentYear} 00:00:00`)
 function updateCounter() {
     const currentTime = new Date()
     const diff = nextVstr - currentTime
